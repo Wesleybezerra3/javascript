@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: beige;
+        }
+            
+        
+    </style>
+    <title> país</title>
+</head>
+<body>
+<h1 >Digite seu país</h1>
+<input type="text" name="tn1" id="tn1">
+<input type="button" value="varificar" onclick="verificar()">
+<div id='res'></div>
+    <script>
+        function verificar() {
+            var valor = window.document.getElementById('tn1')
+            var res = window.document.getElementById('res')
+        
+            if(valor.value == 'Brasil' || valor.value=='brasil') {
+                res.innerHTML = `Vivendo em <strong>${valor.value}</strong> Voce é brasileiro`
+
+            }else if(valor.value == Number(valor.value) || ["+","``","?",""]){
+              alert(`Digite um pais valido`)
+            }else{
+                res.innerHTML =`Vivendo em <strong>${valor.value}</strong> Voce é estrageiro`
+            }
+            
+        }
+    </script>
+</body>
+</html>

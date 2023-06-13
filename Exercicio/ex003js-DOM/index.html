@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+    body{
+        background-color: aquamarine;
+        color: black;
+        font: normal Arial;
+    }
+   </style>
+    <title>Primeiros passos com DOM</title>
+</head>
+<body>
+    <h1> Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>aprendendo a usar <strong>DOM </strong>em javascipt.</p>
+    <div id="msg">Clique em mim.</div>
+
+    <div class="sms">voce recebeu uma mesagem</div>
+    <script>
+var p1 = window.document.getElementsByTagName('p')[1]
+ var corpo = window.document.body
+
+p1.style.color = `red`
+corpo.style.background = `white`
+window.document.write(`Está escrito assim  ` + p1.innerHTML) 
+ 
+/*ID
+var d = window.document.getElementById(`msg`)
+   d.style.background =`white`
+   d.innerText =`Estou aguadando...`
+   */
+ /*NAME
+   var d = window.document.getElementsByName(`msg`)[0]
+d.innerText = 'olá'
+*/
+/* CLASS
+var d2 = document.getElementsByClassName(`sms`)[0]
+d2.style.color = `red`
+*/
+var d = window.document.querySelector(`div#msg`) // Quando for id usar #, Quando for class usar .
+d.style.color = `red`
+
+</script>
+</body>
+</html>

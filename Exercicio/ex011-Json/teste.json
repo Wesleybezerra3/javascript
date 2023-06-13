@@ -1,0 +1,11 @@
+{
+   
+    "nome": "Wesley",
+    "idade":17,
+    "esta_estudando": true,
+    "detalhes_profissao":{
+      "profissao":"Programador"
+    },
+     "hobbies":["Programar","Jogar","Estudar"]
+    
+}
